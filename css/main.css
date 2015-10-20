@@ -3,31 +3,29 @@
 html{
     font-size: 18px;
 }
+
 .logo{
     max-width: 100%;
     height:10rem;
     
 }
-.photo-2{
-    max-width: 110%;
-    height:20rem;
-    padding:1px;
-   border:3px solid #021a40;
-     text-align: center;
 
+.photo-2{
 }
+
 .map{
     text-align: center;
      margin:0;
 
 }
+
 .map-2{
     padding:1px;
    border:3px solid #021a40;
 
 }
 
- ul {
+ .nav-bar {
     background:red;
     border:1px solid black;
     text-align: center;
@@ -42,16 +40,24 @@ html{
     padding-right: 2rem;
     padding-left:2rem;
 }
+
 .nav-bar a{
     color:white;
     
 }
 
- 
-  
 .nav-bar ul{
    text-align: center;
    color:white;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    max-width: 100%;
 }
 
 /* Main Styles */
@@ -133,26 +139,90 @@ a .email{
 }
 
 footer {
-    
     background: #000000;
-    color:red;
+    color:white;
     padding:20px;
-    
+}
+
+footer a {
+    color: inherit;
 }
 
 .contact-links {
     font-size: 1em;
-    text-align: center;  
-    color:red;  
+    text-align: center;   
 }
 
 .contact-links li {
     display: inline;
     padding: 50px 0;
     margin-right: 1rem;
-    color:red;
 }
+
+
 /*img slider*/
+.slider-container {
+    position: relative;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  min-height: 350px;
+}
+
+.slide {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.active-slide {
+  display: block;
+}
+/* Controls */
+
+.slider-nav {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.arrow-prev,
+.arrow-next {
+  margin: 0 10%;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.arrow-next {}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 2rem;
+  margin: 0 5px;
+  transition: color 0.5s;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
+}
+
 
 
 @media screen and (max-width: 550px) {
