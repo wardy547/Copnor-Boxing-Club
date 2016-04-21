@@ -173,6 +173,7 @@ footer a {
   width: 100%;
   max-height: 2300px;
   overflow: hidden;
+  border: solid black 3px;
 }
 
 .slide {
@@ -206,6 +207,7 @@ max-height: 200px;
   margin-top: 9px;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #cccccc;
 }
 
 .arrow-next {}
@@ -218,7 +220,7 @@ max-height: 200px;
 }
 
 .slider-dots li {
-  color: #bbbcbc;
+  color: #ffffff;
   display: inline;
   font-size: 2rem;
   margin: 0 5px;
@@ -226,7 +228,7 @@ max-height: 200px;
 }
 
 .slider-dots li.active-dot {
-  color: #363636;
+  color: #000000;
 }
 
 
