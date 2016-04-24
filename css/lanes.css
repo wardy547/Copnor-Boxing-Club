@@ -7,9 +7,9 @@
   =============
   <div class="container">
     <div class="row">
-      <div class="six columns">
+      <div class="col-6">
       </div>
-      <div class="six columns">
+      <div class="col-6">
       </div>
     </div>
   </div>
@@ -26,80 +26,55 @@
   margin: 0 auto;
   padding: 0;
 }
-.container:before, .container:after {
-  content: "";
-  display: table;
-}
-.container:after {
-  clear: both;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.row:before, .row:after {
-  content: "";
-  display: table;
+[class^="col-"] {
+  flex-flow: column;
 }
-.row:after {
-  clear: both;
+.col-1 {
+  width: 6.95%;
 }
-
-.column {
-  float: left;
-  width: 100%;
+.col-2 {
+  width: 15.41%;
 }
-.column.col-sm-6 {
-  margin-left: 1.5%;
+.col-3 {
+  width: 23.87%;
+}
+.col-4 {
+  width: 32.33%;
+}
+.col-5 {
+  width: 40.79%;
+}
+.col-6 {
   width: 49.25%;
 }
-.column:first-child {
-  margin-left: 0;
+.col-7 {
+  width: 57.70%;
 }
-.column.centered {
-  float: none;
-  clear: both;
-  margin-left: auto;
-  margin-right: auto;
+.col-8 {
+  width: 66.16%;
+}
+.col-9 {
+  width: 74.62%;
+}
+.col-10 {
+  width: 83.08%;
+}
+.col-11 {
+  width: 91.54%;
+}
+.col-12 {
+  width: 100%;
 }
 
-/* medium and up */
-@media screen and (min-width: 550px) {
-  .column {
-    margin-left: 1.5%;
-  }
-  .column.col-md-1 {
-    width: 6.95%;
-  }
-  .column.col-md-2 {
-    width: 15.41%;
-  }
-  .column.col-md-3 {
-    width: 23.87%;
-  }
-  .column.col-md-4 {
-    width: 32.33%;
-  }
-  .column.col-md-5 {
-    width: 40.79%;
-  }
-  .column.col-md-6 {
-    width: 49.25%;
-  }
-  .column.col-md-7 {
-    width: 57.70%;
-  }
-  .column.col-md-8 {
-    width: 66.16%;
-  }
-  .column.col-md-9 {
-    width: 74.62%;
-  }
-  .column.col-md-10 {
-    width: 83.08%;
-  }
-  .column.col-md-11 {
-    width: 91.54%;
-  }
-  .column.col-md-12 {
+@media screen and (max-width: 550px) {
+  [class^="col-"] {
     width: 100%;
-    /*not needed but for uniformity*/
   }
 }
