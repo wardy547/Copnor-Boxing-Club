@@ -25,7 +25,7 @@ html {
 }
 
  .nav-bar {
-  background:red;
+  background:#990000;
   border:1px solid black;
   text-align: center;
   list-style: none;
@@ -66,7 +66,7 @@ iframe {
 /* Main Styles */
 
 body {
-  background-color:#ffffff;
+  background-color:#c0c0c0;
   font-family:'Arvo',serif ;
   color: black;
   line-height: 1.4;
@@ -174,12 +174,10 @@ h4 {
 .coach {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 10px solid black;
   display: flex;
-
+  font-family: Lucida Sans Unicode’, ‘Lucida Grande’, sans-serif;
 }
 .coach__image {
-  background-color: black;
   padding: 5px;
 }
 
@@ -188,8 +186,9 @@ h4 {
 }
 
 .coach__content {
-  border: solid black 10px;
+  border: solid black 5px;
   border-radius: 10px;
+  background: #AEB9D8;
 }
 
 .coach__name {
@@ -198,7 +197,9 @@ h4 {
   margin: 0;
 }
 
-.coach__bio {}
+.coach__bio {
+  text-align: center;
+}
 
 
 @media screen and (max-width: 550px) {
