@@ -168,7 +168,8 @@ h4 {
 .slider-dots li.active-dot {
   color: #000000;
 }
-
+.heading { 
+text-align: center; }
 /*coach bio*/
 
 .coach {
@@ -201,6 +202,16 @@ h4 {
   text-align: center;
 }
 
+@media screen and  (max-width: 900px) {
+  .coach .col-3  {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 550px) {
   .container {
@@ -208,11 +219,15 @@ h4 {
   }
 
   .coach {
-    display: block;
     border-bottom: 0;
   }
 
   .coach__image {
     background: transparent;
   }
+  .coach .col-3 {
+    width: 100%;
+
+  }
 }
+

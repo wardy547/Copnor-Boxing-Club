@@ -1,6 +1,11 @@
 <?php require 'header.php' ?>
 
   <section class="container">
+    <div class="row ">
+      <div class="col-12 heading">
+      <h1> Meet Your New Coach</h1>
+      </div>
+      </div>
     <div class="row coach">
       <div class="col-3 coach__image">
         <img src="./images/photo-2.jpg">
